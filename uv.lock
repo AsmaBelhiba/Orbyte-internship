@@ -3901,19 +3901,19 @@ wheels = [
 
 [[package]]
 name = "onyx-devtools"
-version = "0.10.0"
+version = "0.13.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fastapi" },
     { name = "openapi-generator-cli" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6a/7e/c291c91315255277826a67304212c29ff38d6cf1c74e1f810bd0679304b1/onyx_devtools-0.10.0-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:eefd5a17c6fe39a46467c54cdf3054f3210d48b59f5b6ba8c288660db9f3374f", size = 17741251, upload-time = "2026-07-13T18:10:00.242Z" },
-    { url = "https://files.pythonhosted.org/packages/5d/7c/5856f40d30486c47ba5934e817e3011ea0f9cd78bf5da71e3069e6daad28/onyx_devtools-0.10.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:7e05062fff6bfe73fb9cea73d007e370bf301e76f66d530463d025138a698731", size = 16405657, upload-time = "2026-07-13T18:10:03.255Z" },
-    { url = "https://files.pythonhosted.org/packages/a1/63/c9e564c1904cfb42a48ac41122afedeadce0de9e2bad73320f9211ddb92c/onyx_devtools-0.10.0-py3-none-manylinux_2_17_aarch64.whl", hash = "sha256:e41739153bd8d2da35a8b9f81d2041813f715f04ad2960dd2d746947cb7d92da", size = 15863555, upload-time = "2026-07-13T18:10:05.693Z" },
-    { url = "https://files.pythonhosted.org/packages/6d/f0/30bee827699c40f924985563cb42b82c6b7187297b71559def48e5071d63/onyx_devtools-0.10.0-py3-none-manylinux_2_17_x86_64.whl", hash = "sha256:f17cc560d9e4adbb88c5054cdaf7e0c128145738e4761936da655d6379fc9095", size = 17602880, upload-time = "2026-07-13T18:10:08.176Z" },
-    { url = "https://files.pythonhosted.org/packages/87/38/203a5afe6a638d6374b2db277a85d0d0974dbdecafc08a13b72e13200377/onyx_devtools-0.10.0-py3-none-win_amd64.whl", hash = "sha256:5c49cdb7e31fd8c96b11393384566986c1893b16353ba09fe87ec1329356422a", size = 17818728, upload-time = "2026-07-13T18:10:10.61Z" },
-    { url = "https://files.pythonhosted.org/packages/74/c3/6b7ac8bc6426f493a26b30e84358cc11bbccdc8c36b5a52a0d53f175bd1b/onyx_devtools-0.10.0-py3-none-win_arm64.whl", hash = "sha256:7bcd4da985fbd0acd4548a5560b383343e012307142a51d8853df3978fd67209", size = 15899298, upload-time = "2026-07-13T18:10:12.977Z" },
+    { url = "https://files.pythonhosted.org/packages/72/5f/6a39d12f67a501b91e28ff150cff8affa1d10ef162af473f7262b3e2fc0b/onyx_devtools-0.13.0-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:cf8ac0e6512499625882e03aa2cf615cf70d08057b741266987f728ed99152b8", size = 18417206, upload-time = "2026-08-25T01:28:19.939Z" },
+    { url = "https://files.pythonhosted.org/packages/ed/cc/761481529d6333d94250e8d9c9f944c66f4a53e9a576abeecf6d7c28e99c/onyx_devtools-0.13.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:ed3fa4c76c5344df7926721818267cb5e9c8d6ebaa07ebad8712ff76290fae5f", size = 17014530, upload-time = "2026-08-25T01:28:22.305Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/22/048a84c4313b8d982a904a4ced46ded8b55e221217178cd14d52e3a735d6/onyx_devtools-0.13.0-py3-none-manylinux_2_17_aarch64.whl", hash = "sha256:d85f8a851ca1267139be9129aa27076add8dd4a5b76c140528c4a71d3a2bd0ff", size = 16459615, upload-time = "2026-08-25T01:28:24.662Z" },
+    { url = "https://files.pythonhosted.org/packages/53/dd/a973ebfbff78f3c01bbccf0c7142cc96bc24e9980d5d11de9dfedb0c0c4c/onyx_devtools-0.13.0-py3-none-manylinux_2_17_x86_64.whl", hash = "sha256:846856f33485109261ed18df3f7de36da376ac29844d0fbe20fa6b2bc57ef952", size = 18273821, upload-time = "2026-08-25T01:28:27.718Z" },
+    { url = "https://files.pythonhosted.org/packages/fa/f9/b28e8cd7d765ac2cc3060e92051148814542ab9c66fbb5b85d6775eaad9b/onyx_devtools-0.13.0-py3-none-win_amd64.whl", hash = "sha256:c1d082cee6b0a6ad6ce3e9ca958779f2c674618e806fb511746fe83c57b0c225", size = 18491279, upload-time = "2026-08-25T01:28:30.313Z" },
+    { url = "https://files.pythonhosted.org/packages/00/68/5ae795a2d5be16337ea6c1d11ace9cfe9cd164932e60efd77a78863a93f1/onyx_devtools-0.13.0-py3-none-win_arm64.whl", hash = "sha256:c9af43bd2ae166aa920f0ad9d5d92bb7f8b2e9429d972013e34b06639f53edd2", size = 16497426, upload-time = "2026-08-25T01:28:32.729Z" },
 ]
 
 [[package]]
@@ -4370,7 +4370,7 @@ dev = [
     { name = "ipykernel", specifier = "==6.29.5" },
     { name = "manygo", specifier = "==0.2.0" },
     { name = "matplotlib", specifier = "==3.10.8" },
-    { name = "onyx-devtools", specifier = "==0.10.0" },
+    { name = "onyx-devtools", specifier = "==0.13.0" },
     { name = "openapi-generator-cli", specifier = "==7.17.0" },
     { name = "pandas-stubs", specifier = "~=2.3.3" },
     { name = "pre-commit", specifier = "==3.2.2" },
