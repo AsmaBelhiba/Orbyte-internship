@@ -10,7 +10,7 @@ dependencies = [
     "google-genai==1.52.0",
     "litellm[google]==1.89.4",
     "openai==2.38.0",
-    "pydantic==2.11.7",
+    "pydantic==2.13.5",
     # Shared so structured JSON logging (LOG_FORMAT=json) works in the
     # model_server image too, not just the backend.
     "python-json-logger==4.1.0",
