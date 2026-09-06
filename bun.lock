@@ -38,7 +38,7 @@
       },
     },
     "widget": {
-      "name": "onyx-chat-widget",
+      "name": "orbyte-chat-widget",
       "version": "1.0.0",
       "dependencies": {
         "dompurify": "^3.4.11",
@@ -565,9 +565,9 @@
 
     "node-releases": ["node-releases@2.0.46", "", {}, "sha512-GYVXHE2KnrzAfsAjl4uP++evGFCrAU1jta4ubEjIG7YWt/64Gqv66a30yKwWczVjA6j3bM4nBwH7Pk1JmDHaxQ=="],
 
-    "onyx-chat-widget": ["onyx-chat-widget@workspace:widget"],
-
     "onyx-desktop": ["onyx-desktop@workspace:desktop"],
+
+    "orbyte-chat-widget": ["orbyte-chat-widget@workspace:widget"],
 
     "parse-entities": ["parse-entities@4.0.2", "", { "dependencies": { "@types/unist": "^2.0.0", "character-entities-legacy": "^3.0.0", "character-reference-invalid": "^2.0.0", "decode-named-character-reference": "^1.0.0", "is-alphanumerical": "^2.0.0", "is-decimal": "^2.0.0", "is-hexadecimal": "^2.0.0" } }, "sha512-GG2AQYWoLgL877gQIKeRPGO1xF9+eG1ujIb5soS5gPvLQ1y2o8FL90w2QWNdf9I361Mpp7726c+lj3U0qK1uGw=="],
 
