@@ -1,0 +1,46 @@
+# Orbyte Local Monitoring Stack
+
+Prometheus + Grafana for local development. Pre-loaded with dashboards for the Orbyte backend.
+
+## Usage
+
+```bash
+cd profiling/
+docker compose up -d
+```
+
+| Service    | URL                          | Credentials   |
+|------------|------------------------------|---------------|
+| Grafana    | http://localhost:3001        | admin / admin |
+| Prometheus | http://localhost:9090        | —             |
+
+## Dashboards
+
+- **Orbyte DB Pool Health** — PostgreSQL connection pool utilization
+- **Orbyte Indexing Pipeline v2** — Per-connector indexing throughput, queue depth, task latency
+- **Orbyte Permission Sync** — Doc permission sync and external group sync duration, throughput, errors, and Celery task metrics
+
+## Scrape targets
+
+| Job                        | Port  | Source                        |
+|----------------------------|-------|-------------------------------|
+| `orbyte-api-server`          | 8080  | FastAPI `/metrics` (matches `.vscode/launch.json`) |
+| `orbyte-monitoring-worker`   | 9096  | Celery monitoring worker      |
+| `orbyte-docfetching-worker`  | 9092  | Celery docfetching worker     |
+| `orbyte-docprocessing-worker`| 9093  | Celery docprocessing worker   |
+| `orbyte-heavy-worker`        | 9094  | Celery heavy worker (pruning, perm sync, group sync) |
+| `orbyte-light-worker`        | 9095  | Celery light worker (vespa sync, deletion, permissions upsert) |
+
+## Environment variables
+
+Override defaults with a `.env` file in this directory or by setting them in your shell:
+
+| Variable            | Default | Description                     |
+|---------------------|---------|---------------------------------|
+| `PROMETHEUS_PORT`   | `9090`  | Host port for Prometheus UI     |
+| `GRAFANA_PORT`      | `3001`  | Host port for Grafana UI        |
+| `GF_ADMIN_PASSWORD` | `admin` | Grafana admin password          |
+
+## Editing dashboards
+
+`allowUiUpdates: true` is set in the provisioning config, so you can edit dashboards in the Grafana UI. However, **changes don't persist** across `docker compose down` — to keep edits, export the dashboard JSON and overwrite the file in `grafana/dashboards/orbyte/`.
